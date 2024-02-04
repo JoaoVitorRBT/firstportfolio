@@ -123,11 +123,11 @@ body {
     padding: 5px;
 }
 .apresentacao__links__certificado {
-    font-family: var(--fonte-secundaria);
+    width: 150px;
+    font-family: var(--fonte-primaria);
     text-decoration: none;
     color: var(--cor--secundaria);
-    width: 320px;
-    font-size: 1.12rem;
+    font-size: 1.2rem;
     border: 2px solid var(--cor--terciaria);
     border-radius: 16px;
     text-align: center;
@@ -143,6 +143,12 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.37rem;
 }
+.apresentacao__links__certificado__juntos {
+    width: 530px;
+    display: flex;
+    align-items: stretch;
+    gap: 44px;
+}
 
 @media (max-width: 1200px) {
     .cabecalho {
@@ -157,5 +163,26 @@ body {
     }
     .apresentacao__conteudo {
         width: auto;
+    }
+    .apresentacao__sobre__mim {
+        flex-direction: column;
+        padding: 6% 5%;
+    }
+    .apresentacao__texto {
+        padding: 10%;
+    }
+    .apresentacao__links__certificado__juntos {
+        width: 530px;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding: 25px;
+    }
+    .apresentacao__links__certificado {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 400px;
+        padding: 5%;
+        margin: 0px 10px 10px 15px;
     }
 }
